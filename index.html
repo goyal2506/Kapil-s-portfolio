@@ -317,11 +317,12 @@
             <div class="contact-data">
                 <h2>Get In Touch</h2>
                 <p>My inbox is always open! 💌 Whether you've got a burning question or want to drop a friendly "hello", I'm all ears!👂 Let's chat! 🎉</p>
-                <form action="submit">
-                    <input type="text" placeholder="Full Name *"> <br>
-                    <input type="email" placeholder="Email *"><br>
-                    <input type="text" id="message" placeholder="Message *">
-                    <button>Say Hello</button>
+                <form action="https://api.web3forms.com/submit" method="POST">
+                    <input type="hidden" name="access_key" value="d9db1f32-f304-4c2e-ad7d-f4cdbf888ce6"/>
+                    <input type="text" name="name" required placeholder="Full Name *"> <br>
+                    <input type="email" name="email" required placeholder="Email *"><br>
+                    <textarea name="message" required id="" rows="8" cols="66" placeholder="Type your message"></textarea>
+                    <button type="submit">Say hello</button>
                 </form>
             </div>
         </div>
